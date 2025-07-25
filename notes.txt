@@ -1,0 +1,725 @@
+install "liveserver" plugin
+
+"liveserver" plugin, captures/monitors/detects the application changes (code changes)
+
+browser will reload / refresh automatically with the help of liveserver notifications
+
+
+click Extensions ---> search live server --->click install --->restart ide
+
+install "Dummy text generator " plugin
+        "Dummy text generator " plugin , used to generate random content.
+
+        extension -->"Dummy text generator -->install -->restart
+
+Enable autosave
+manage -->settings -->autosave -->afterDelay
+application will save automatically
+
+Browsers:
+            google chrome
+            Mozilla.
+________________________________________________________________________________________________________________________
+30-06-25
+--------
+
+Headings
+********
+HTML supports 6 types of Headings
+
+1.<h1></h1>   main Headings
+2.<h2></h2>    sub Headings
+3.<h3></h3>     """"
+4.<h4></h4>     """"
+5.<h5></h5>     """"
+6.<h6></h6>     """"
+
+external style sheet
+********************
+
+<link> tag used to include external style sheet
+<link> tag is non paired tag
+<link> tag supports following attributes 
+
+1. href
+2. rel="stylesheet"
+
+grouping of selectors
+*********************
+applying styles to more than one element at a time called as grouping of selectors
+all elements are seperated by using ","
+syntax:
+h1,h2,h3{
+        //css code
+}
+
+padding
+*******
+space around the content called as padding
+ex:
+padding:20px
+
+margin
+********
+space around the element called as margin
+ex:margin:20 px
+
+
+box-model
+*********
+combination of padding,border and margin called as box model in css
+
+block level elements
+**********************
+
+by default each element starts with new line and occupies 100% width .
+Headings,paragraphs and divisions are example for block level elements
+below css snippet used to convert block elements to inline elements
+ex:
+display : inline-block;
+
+inline elements
+***************
+
+inline elements never starts with new line
+inline elements occupies only required  width 
+anchor element,span, button are the examples for inline elements
+below css snippet used to 
+
+
+paragraphs
+************
+
+<p></p> tag used to display paragraphs
+<p></p> tag is block level element
+
+class selectors
+***************
+
+class selector starts with "."
+syntax:
+HTML
+*****
+        <p class ="c1"></p>
+
+id selector
+***********
+        id selector starts with "#"
+
+        syntax:
+        HTML
+        *****
+        <p id="id1"></p>
+
+element selector (tag selector)
+***********************************
+
+apply styles based on element / tag name
+
+syntax:
+        p{}
+
+
+
+psudo classes
+**************
+
+psudo classes specifies special state to an element
+we will apply psudo classes with the help of ":".
+
+
+
+differences btween class selector and id selector
+*************************************************
+                class selector                          id selector
+                *****************************************************
+1. starts with .(dot)                              1.starts with "#"
+2. HTML                         css                     HTML                            css
+********                        ****                    ****                            ****
+<p class="c1 c2"></p>         .c1{}                     <p id="id1"></p>                #id1{}
+                              .c2{}
+3.class may be duplicate                                3.id should be unique
+
+4.class selector have less specificity                 4.it has more importance compared to class selector
+   compared to id selector
+5.if multiple teams working on single project           5.to dominate 3rd party styles,we use id selector
+  choose class selector.
+
+
+
+Divisions 
+*********
+divisions are used to divide web page into multiple sections
+
+<div></div> tag, used to create divisions in webpages
+<div></div> tag, is block level element.
+
+
+internal styles
+***************
+<style></style> tag is used to include internal styles.
+
+
+differences
+******************
+external styles
+**************
+1.<link> tag is used to include externalstyles
+
+2.<link> is non paired tag
+
+3.through external styles we will reuse styles.
+
+internal styles
+**************
+1.<style></style> tag used to include internal styles.
+
+2.it is a paired tag.
+
+3.we may not reuse.
+
+4-7-25
+******
+anchor element
+**************
+        anchor element used to create hyper links.
+        anchor element used to navigate from one webpage to another webpage.
+        anchor element used to open external websites.
+        anchor element is inline element.
+
+attributes
+************
+1. href-
+        used to refer target location/path.
+
+2.target="_blank"
+        used to open the new tab in browser.
+
+images
+********
+        <img> tag used to display the images.
+        <img> tag is non paired, and inline element.
+
+attributes
+*************
+1.width:
+        used to define the image width
+2.height:
+        used to define image height.
+3.src 
+        used to refer the image path.
+4.alt 
+        alt stands for alternative text.
+        if image dispalys fails , automatically we will display alternative text.
+
+buttons
+********
+<button></button> tag, is used to display the buttons in webpages.
+<button></button> tag, is inline element.
+ex:
+        <button>
+                LOGIN
+        </button>
+
+  In how many ways can we apply styles?
+        we can apply styles in 3 ways:
+        1.external styles      
+        2.internal style
+        3.inline  styles
+
+<link> tag used to apply external styles.
+<style></style> to apply internal styles.
+"style" attribute used to apply inline styles.
+
+explain css specificity rule ?
+   
+   inline>id selector>class selector>element selector>universal selector
+   we will represent universal selector with "*".
+   
+5-7-25
+******
+font-awesome
+***********
+        font awesome library is the css library.
+        font awesome library used to display symbols.
+        ex:
+                rupee symbols
+                dollor symbols
+                ----
+                ----
+
+        we will include font-awesome CDN ,in head section of webpage.
+
+        CDN- Content Delivery Network.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<i></i> tag , is used to display symbols.
+
+ex:
+        <i class="fa fa-inr"></i>
+        <i class="fa fa-dollar"></i>
+        <i class="fa fa-trash"></i>
+
+
+
+Tables
+******
+collection of rows and columns called as table.
+
+tags
+*****
+<table></table> tag is used to create the table.
+<tr></tr> used to create table row.
+<th></th> used to display Headings
+by default all Headings in row1.
+<td></td> used to display table cell data.
+
+attributes
+**********
+1. border
+        used to draw border to table.
+        ex: border="1".
+
+2.align="left" /"center" / "right"
+        defult alignment is left.
+        ex: align="center"
+
+3.cellpadding
+        used to maintain space around the content.
+        ex:cellpadding="10"
+
+4.cellspacing
+        used to maintain space btween table cellspacing
+        ex:
+                cellspacing="10"
+5.colspan
+        used to merge table cells column wise 
+        ex:
+                colspan="2"
+6.rowspan:
+        used to merge cells row wise.
+        ex:
+        rowspan="2"
+
+8-7-25
+*********
+iframe
+------
+1.open google maps
+2.play youtube videos
+3.open pdf 
+4.include webpages
+5.include wikipidea files.
+
+
+<fieldset></fieldset>
+*************************
+
+<fieldset></fieldset>
+
+
+
+
+
+
+9-7-25
+*********
+Forms
+*****
+        collection of related data called as Forms
+
+        ex: login from
+                registration from
+                enrollment from
+                ------
+                ------
+
+tags
+****
+<form action="" name="" method="" onsubmit="" onreset=""></form>
+<form></form> tag, is used to create forms.
+action attribute,used to connect to backend.
+name attribute, used to assign logical name to the form.
+Ex:
+        name="regform"
+method attribute,used to specify type of request
+
+ex:method="GET" / "PUT" /"DELETE" / "POST"
+
+
+
+"GET" request ,is used to read data from backend
+"POST" request , is used to send data to backend
+"PUT" request , is used to update backend data
+"DELETE" request , is used to delete backend data
+
+onsubmit attribute, is used to handle submit event
+EX:
+        onsubmit="func_one()"
+when ever we click submit button, automatically func_one() will execute in javascript
+
+onreset attribute, is used to handle the reset event
+Ex:
+        onreset="clear()"
+whenever we click cancel button automatically clear function will execute in javascript.
+
+
+HTML
+****
+<input type = "text">             A B C
+<input type = "password">         ***
+<input type = "radio">            No  ○  ●  Yes
+<input type = "checkbox">         ☐  ☑  ☑
+<input type = "email">            _______________
+<input type = "file">             [Choose file] image.png
+<input type = "image">            ☐ submit image
+<input type = "number">           914
+<input type = "range">            ──────●──────
+<input type = "search">           [search]
+<input type = "tel">              123-456
+<input type = "time">             10:24
+<input type = "submit">           [Submit]
+<input type = "reset">            [reset]
+<input type = "url">              [https://www.whatsapp.com]
++<input type = "date">             [calender]
+<input type = "color">            
+
+checkboxes
+**********
+        checkboxes are also called as multiselection controls.
+
+<input type="checkbox" name="languages" value="C">C Lang
+<input type="checkbox" name="languages" value="c++">CPP
+<input type="checkbox" name="languages" value="java">java
+<input type="checkbox" name="languages" value=".net">dot net
+
+Radio buttons
+*************
+        radio buttons are also called as single selection controls.
+
+<input type="radio" name="gender" value="male">Male 
+<input type="radio" name="gender" value="female">Female
+
+        name should be same.
+
+dropdown
+**********
+        <select></select> tag , is used to create dropdown.
+        <option></option> tag , is used to populate options to the dropdown.
+
+<textarea></textarea>:
+**********************
+<textarea></textarea> TAG , is used to address
+
+cols attribute used to increase or decrease the width.
+rows attribute used to increase or decrease the height.
+
+submit & reset 
+*************
+
+
+
+
+11-7-25
+*********
+css supports 5 positions
+
+1.relative
+2.absolute
+3.fixed
+4.sticky
+5.static.
+
+1.relative
+**********
+        moving element from its starting position called as relative position.
+
+       ***** because of relative position other elements never effect on layout/webpage
+
+2.absolute
+**********
+
+        child element movement depending on parent element position
+        because of absolute position, other element effect on layout.
+
+
+3.fixed
+******
+
+        used to fix the element permanently on webpage
+        syntax:
+                position: fixed:
+                left:
+                right:
+                top:
+                bottom:
+
+4.sticky
+***********
+
+used to stick the element on webpage while scrolling
+
+ex: position: sticky:
+    top:0px:
+
+    note: default position is "static".
+
+
+z-index
+********
+        used to change the order of elements in stack (layered structure)
+        z-index introduced in css3
+        z-index wont work in sticky positions.
+
+Lists
+*********
+        HTML SUPPORTS 3 TYPES OF Lists.
+        1.ordered List
+        2.unordered List
+        3.definition List.
+
+1.ordered list:
+**************
+        <ol></ol> is the tag used to create ordered list.
+        <li></li> is the tag used to create list item.
+
+        syntax:
+                <ol>
+                    <li></li>
+                    <li></li>
+                    ------
+                    -----
+                </ol>
+
+attributes:
+*******
+1.type = "A" / "a" /"I" /"i"/1
+        default is number
+2.start 
+        used to specify the starting number in list
+        ex:
+                start="10"
+
+3.reversed
+        used to reverse the "list numbers".
+
+
+2.unordered list:
+****************
+        <ul></ul> tag is used to create unordered list.
+
+        syntax:
+         
+         <ul>
+            <li></li>
+            ----
+            ----
+        </ul>
+
+attributes
+*************
+
+
+
+
+definition list
+**************
+        <dl></dl> tag used to create definition list
+        <dt></dt> stands for definition term
+        <dd></dd> stands for definition description.
+
+
+        syntax
+        *******
+                <dl>
+                    <dt></dt>
+                    <dd></dd>
+
+
+
+
+
+
+
+
+
+
+
+Text formatting tags
+**********************
+
+1.<b></b>  -------- bold text
+2.<strong></strong>----strong text
+3.<br> ---------line break
+4.<hr> ---------horizontal rule
+
+5.<i></i> ------ italic text
+6.<em></em> -----emphasised text.
+7.<del></del> ----deleted text
+8.<strike></strike>----striked text
+9.<big></big>----------big text
+10.<small></small>------small text
+11.<u></u> ----------represent underlined text
+12.<sup></sup>----------superscript
+13.<sub></sub>----------subscript
+
+14.<mark></mark>--------- marked text
+
+
+
+15.<address></address>------used to display the address.
+
+16.<bdo dir=""></bdo>------stands for bi-directional override
+
+17.<abbr
+
+18.<blockquote>
+
+19.<var></var>
+
+20.<kbd></kbd>
+
+21.<pre>----------preformatted text.
+
+22.<embed></embed>--used to include external resoures lilke videos,audio,pdfs.
+
+
+
+
+semantic elements
+*****************
+
+        new tags called as semantic elements
+        semantic elements are released in html5.x
+        semantic elements increases application readability
+
+        ex:
+                <header></header>
+                <nav></nav>
+                <aside></aside>
+                <main></main>
+                <footer></footer>
+                <summary></summary>
+                <article></article>
+                <selection></selection>
+                <audio></audio>
+                <video></video>
+                <figure>
+                
+
+
+16-7-25
+*******
+box-sizing
+----------
+when ever we apply box-sizing property, automatically border and padding included to original width and height
+of an element.
+
+ex:box-sizing:border-box;
+
+17-7-25
+----------
+
+Dimensions
+***********
+
+css  supports following dimensions.
+        1.px
+        2.rem
+        3.em
+        4.vw(viewport width) & vh
+        5.% (percentage.)
+
+px(pixel):
+*******
+each dot in screen called as pixel.
+pixels are common irrespective of devices.
+pixel is the commonly used dimension.
+
+usecase : if we need fixed width irrespective of screens, then we will use pixel.
+
+
+rem(root em):
+**********
+
+all webpage elements dimension depending on root element dimension.
+
+1rem = 16px;
+
+em
+**
+child element dimension depending on parent element dimension.
+
+percentage
+***********
+        it is used to calculate the dimension with respect to screen
+        child element dimension depending on parent element dimension in case of percentage also.
+
+vw & vh
+*******
+        viewport
+        total width of the screen called as 100 vw
+        total height of the screen caled as 100 vh
+        child element dimension never  depends on parent element dimension.
+        we will use in real time while developing responsive web design.
+
+
+
+css flex
+************
+
+adjusting elements with respect to main axis called as css flex.
+css flex is one dimensional.
+
+in css flex , parent and child relationship mandatory
+if we apply css flex to parent element automatically it reflect to all child elements.
+
+css flex mainly on content of the webpage, not the design of webpage.
+
+css flex properties
+*******************
+1.display : flex;
+        used to convert block level elements to inline elements
+
+2.gap
+
+
+
+3.justify-content:
+                flex-start
+                center
+                flex-end
+                space-between
+                space-around
+                space-evenly
+        used to align items w r t x-axis
+        default value is flex start.
+
+4.align-items: flex-start
+                center
+                flex-end
+                stretch
+        used to align flex items w rt y-axis
+        "height property is mandatory,in order to use align-items.
+        default value is stretch"
+
+        ex:
+           height : 100vh;
+           align-items : flex-start;
+
+5.order:
+        used to change the order of flex items in flex container.
+
+        ex:order:10
+
+6.flex: flex-basis flex-grow flex-shrink;
+        used to map ,initial width,grow proportion and shrink proportion for particular flex item.
+        ex:60% 2  3;
+
+7.flex-direction: row / row-reverse / column / column-reverse.
+        used to change the flex item direction.
+
+8.flex-wrap : wrap / wrap-reverse / nowrap;
+        used to wrap the flex items
+        default value is nowrap.
